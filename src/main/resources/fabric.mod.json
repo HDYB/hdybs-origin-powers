@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "hop",
+	"version": "${version}",
+	"name": "HDYB's Origin Powers",
+	"description": "Adds additional origin powers!",
+	"authors": [
+		"HDYB!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hop/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.hdyb.hop.HDYBSOriginPowers"
+		],
+		"fabric-datagen": [
+			"com.hdyb.hop.HDYBSOriginPowersDataGenerator"
+		],
+		"client": [
+			"com.hdyb.hop.HopClient"
+		]
+	},
+	"mixins": [
+		"hop.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
